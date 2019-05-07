@@ -33,13 +33,10 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
     label {
         float: left;
         width: 100%;
-    }
-
-    input {
     }
 
     div {

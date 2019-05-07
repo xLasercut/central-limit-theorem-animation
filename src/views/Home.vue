@@ -18,6 +18,7 @@
             </inputs>
 
             <el-button @click="start()" :disabled="disabled" type="primary">Start</el-button>
+            <el-button @click="stop()" >Stop</el-button>
             <el-button @click="reset()" :disabled="disabled" type="danger">Reset</el-button>
         </div>
         <div class="canvasContainer">

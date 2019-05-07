@@ -39,7 +39,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
     path {
         fill: none;
         stroke: #f1d500;

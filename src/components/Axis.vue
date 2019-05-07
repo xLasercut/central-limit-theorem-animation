@@ -21,7 +21,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
     line {
         stroke: #000000;
         stroke-width: 2;

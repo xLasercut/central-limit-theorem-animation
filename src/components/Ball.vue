@@ -53,7 +53,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
     circle {
         fill: #f1d600;
     }
