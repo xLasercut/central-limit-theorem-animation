@@ -17,9 +17,9 @@
                 Time per Draw (ms)
             </inputs>
 
-            <el-button @click="start()" :disabled="disabled" type="primary">Start</el-button>
-            <el-button @click="stop()" >Stop</el-button>
-            <el-button @click="reset()" :disabled="disabled" type="danger">Reset</el-button>
+            <el-button @click="start()" v-if="!disabled" type="success" icon="el-icon-check">Start</el-button>
+            <el-button @click="stop()" v-if="disabled" type="danger" icon="el-icon-close">Stop</el-button>
+            <el-button @click="reset()" :disabled="disabled" type="warning" icon="el-icon-refresh">Reset</el-button>
         </div>
         <div class="canvasContainer">
             <svg class="canvas" :height="height" :width="width">
@@ -166,6 +166,10 @@
                 for (var key in this.averages) {
                     this.averages[key] = 0
                 }
+            },
+            stop() {
+                clearInterval(this.process)
+                this.disabled = false
             }
         },
         mounted() {
