@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "element-ui": "^2.4.5",
-    "gsap": "^2.1.2",
     "jStat": "^1.7.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"

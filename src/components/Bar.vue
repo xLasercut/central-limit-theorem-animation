@@ -7,8 +7,6 @@
 </template>
 
 <script>
-    import { TimelineLite } from 'gsap/all'
-
     export default {
         props: {
             height: {
