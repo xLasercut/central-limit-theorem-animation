@@ -163,6 +163,7 @@
                 this.xstep = Math.floor(this.width / this.range)
             },
             reset() {
+                this.maxHeight = 1
                 for (var key in this.averages) {
                     this.averages[key] = 0
                 }
