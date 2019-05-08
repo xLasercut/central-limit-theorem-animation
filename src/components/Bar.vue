@@ -1,7 +1,7 @@
 <template>
     <g>
         <rect class="bar" :x="x" y="400" height="200" width="40"></rect>
-        <rect class="overlay" :x="x" y="400" height="200" width="40" ref="overlay"></rect>
+        <rect class="overlay" :x="x-1" y="398" height="202" width="42" ref="overlay"></rect>
         <text v-bind="labelStyle" :y="595" v-if="label">{{label}}</text>
     </g>
 </template>
