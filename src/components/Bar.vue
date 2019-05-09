@@ -33,13 +33,17 @@
         },
         computed: {
             labelStyle() {
+                var x = this.x + 10
+
                 if (this.label < 10) {
-                    return {
-                        x: this.x + 15
-                    }
+                    x = this.x + 15
                 }
+                else if (this.label > 99) {
+                    x = this.x + 7
+                }
+
                 return {
-                    x: this.x + 10
+                    x: x
                 }
             }
         },

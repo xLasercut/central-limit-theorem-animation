@@ -98,7 +98,7 @@
                     total += sample
                 }
 
-                var average = Math.floor(total / this.sampleSize)
+                var average = Math.round(total / this.sampleSize)
 
                 return {
                     samples: samples,
