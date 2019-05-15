@@ -11,6 +11,8 @@ Demo can be viewed [Here](https://xlasercut.github.io/central-limit-theorem-anim
 
 ## Project setup
 ```
+git clone https://github.com/xLasercut/central-limit-theorem-animation.git
+cd central-limit-theorem-animation
 npm install
 ```
 
