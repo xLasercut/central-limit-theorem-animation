@@ -38,7 +38,7 @@
 
 
             timeline.to(ball, this.baseTime, {y: 170})
-            timeline.to(ball, this.baseTime/2, {x: this.endx - this.startx, fill: '#fb9a1a'})
+            timeline.to(ball, this.baseTime/2, {x: this.endx - this.startx, fill: 'red'})
             timeline.to(ball, this.baseTime/2, {y: 410})
 
             setTimeout(() => {

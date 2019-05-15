@@ -1,16 +1,16 @@
 <template>
     <div class="home">
         <div class="inputContainer">
-            <inputs v-model.number="alpha" :disabled="disabled" :min="0.1" :max="5" :step="0.01">
+            <inputs v-model.number="alpha" :disabled="disabled" :min="0.1" :max="20" :step="0.01">
                 Alpha
             </inputs>
-            <inputs v-model.number="beta" :disabled="disabled" :min="0.1" :max="5" :step="0.01">
+            <inputs v-model.number="beta" :disabled="disabled" :min="0.1" :max="20" :step="0.01">
                 Beta
             </inputs>
             <inputs v-model.number="sampleSize" :disabled="disabled" :min="1" :max="15" :step="1">
                 Sample Size
             </inputs>
-            <inputs v-model.number="draws" :disabled="disabled" :min="1" :max="200" :step="1">
+            <inputs v-model.number="draws" :disabled="disabled" :min="1" :max="1000" :step="1">
                 Draws
             </inputs>
             <inputs v-model.number="dt" :disabled="disabled" :min="100" :max="2000" :step="100">
@@ -23,7 +23,7 @@
         </div>
         <div class="canvasContainer">
             <svg class="canvas" :height="height" :width="width">
-                <distribution :alpha="alpha" :beta="beta" :range="range" :xstep="xstep"></distribution>
+                <distribution :alpha="alpha" :beta="beta"></distribution>
                 <axis :y="370" label="Average"></axis>
                 <axis :y="602" label="Count"></axis>
                 <axis :y="200" label="Draw"></axis>
